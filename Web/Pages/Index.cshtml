@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Últimos posts</h1>
+
+@if (Model.ErrorMessage is not null)
+{
+    <p role="alert">@Model.ErrorMessage</p>
+}
+else if (Model.Posts.Count == 0)
+{
+    <p>Nenhum post publicado ainda.</p>
+}
+else
+{
+    @foreach (var post in Model.Posts)
+    {
+        <article>
+            <h2>@post.Title</h2>
+            @if (post.Authors.Any())
+            {
+                <p>Por @post.Authors.First().Name</p>
+            }
+            <div>@Html.Raw(post.Body)</div>
+        </article>
+    }
+}

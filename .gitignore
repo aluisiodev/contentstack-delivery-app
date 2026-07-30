@@ -1,0 +1,14 @@
+# Build
+bin/
+obj/
+
+# User secrets e configs locais
+**/appsettings.Development.json
+**/secrets.json
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
