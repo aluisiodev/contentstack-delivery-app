@@ -1,5 +1,11 @@
 # Contentstack Content Delivery Web Application
 
+![.NET 10](https://img.shields.io/badge/.NET_10-512BD4?logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![ASP.NET Core Razor Pages](https://img.shields.io/badge/ASP.NET_Core-Razor_Pages-512BD4)
+![Contentstack](https://img.shields.io/badge/Contentstack-headless_CMS-7C4DFF)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 An ASP.NET Core (Razor Pages) web application that consumes structured content from
 [Contentstack](https://www.contentstack.com/), a headless CMS, through the official
 .NET Content Delivery SDK.
